@@ -215,7 +215,44 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			</div>
 
 			<div data-elementor-type="wp-page" data-elementor-id="14" class="elementor elementor-14">
-				<div data-ekitparallax="{&quot;ekit_section_parallax_bg&quot;:&quot;yes&quot;,&quot;ekit_section_parallax_bg_speed&quot;:0.5,&quot;elementor_lazy_load&quot;:&quot;1&quot;}" class="elementor-element elementor-element-e4dcca0 e-flex e-con-boxed e-con e-parent" data-id="e4dcca0" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<!-- Hero Slider Section -->
+				<div class="hero-slider-wrapper" style="position: relative; width: 100%; min-height: 600px; overflow: hidden; margin-bottom: 0;">
+					<div class="swiper hero-slider" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image: url('images/Slider%201.png'); background-size: cover; background-position: center; min-height: 600px; display: flex; align-items: center; justify-content: center;">
+								<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2);"></div>
+							</div>
+							<div class="swiper-slide" style="background-image: url('images/Slider%202.png'); background-size: cover; background-position: center; min-height: 600px; display: flex; align-items: center; justify-content: center;">
+								<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.2);"></div>
+							</div>
+						</div>
+						<div class="swiper-pagination" style="bottom: 30px; z-index: 10;"></div>
+						<div class="swiper-button-next" style="color: white; right: 30px; z-index: 10;"></div>
+						<div class="swiper-button-prev" style="color: white; left: 30px; z-index: 10;"></div>
+					</div>
+					<script>
+					document.addEventListener('DOMContentLoaded', function() {
+						if (typeof Swiper !== 'undefined') {
+							new Swiper('.hero-slider', {
+								loop: true,
+								autoplay: {
+									delay: 5000,
+									disableOnInteraction: false,
+								},
+								pagination: {
+									el: '.hero-slider .swiper-pagination',
+									clickable: true,
+								},
+								navigation: {
+									nextEl: '.hero-slider .swiper-button-next',
+									prevEl: '.hero-slider .swiper-button-prev',
+								},
+							});
+						}
+					});
+					</script>
+				</div>
+				<div data-ekitparallax="{&quot;ekit_section_parallax_bg&quot;:&quot;yes&quot;,&quot;ekit_section_parallax_bg_speed&quot;:0.5,&quot;elementor_lazy_load&quot;:&quot;1&quot;}" class="elementor-element elementor-element-e4dcca0 e-flex e-con-boxed e-con e-parent" data-id="e4dcca0" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="position: relative; z-index: 2; background: transparent;">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-4956713 e-con-full e-flex e-con e-child" data-id="4956713" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-aa88cdf e-con-full e-flex e-con e-child" data-id="aa88cdf" data-element_type="container" data-e-type="container">

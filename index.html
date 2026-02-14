@@ -108,6 +108,49 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <link rel="icon" href="images/favicon.png" sizes="192x192" />
 <link rel="apple-touch-icon" href="images/favicon.png" />
 <meta name="msapplication-TileImage" content="images/favicon.png" />
+<style>
+	/* Kambert custom menu styles */
+	.kambert-blue-menu .elementskit-menu-container, .kambert-blue-menu .elementskit-navbar-nav-default {
+		background: #0056b3 !important; /* Kambert blue */
+		border-radius: 0 0 18px 18px;
+		box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+	}
+	.kambert-blue-menu .elementskit-navbar-nav > li > a,
+	.kambert-blue-menu .elementskit-navbar-nav .ekit-menu-nav-link {
+		color: #fff !important;
+		font-weight: 600;
+		letter-spacing: 0.5px;
+		font-size: 1.08em;
+		padding: 16px 22px 16px 22px !important;
+		transition: background 0.2s, color 0.2s;
+	}
+	.kambert-blue-menu .elementskit-navbar-nav > li > a:hover,
+	.kambert-blue-menu .elementskit-navbar-nav > li.active > a,
+	.kambert-blue-menu .elementskit-navbar-nav > li.current-menu-item > a {
+		background: rgba(255,255,255,0.12);
+		color: #ff9900 !important;
+		border-radius: 8px;
+	}
+	.kambert-blue-menu .elementskit-dropdown {
+		background: #004080 !important;
+		border-radius: 0 0 12px 12px;
+	}
+	.kambert-blue-menu .elementskit-dropdown a {
+		color: #fff !important;
+		font-weight: 500;
+	}
+	.kambert-blue-menu .elementskit-dropdown a:hover {
+		color: #ff9900 !important;
+		background: rgba(255,255,255,0.10);
+	}
+	/* Hamburger menu (mobile) */
+	.kambert-blue-menu .elementskit-menu-hamburger span {
+		background: #fff !important;
+	}
+	.kambert-blue-menu .elementskit-menu-overlay {
+		background: rgba(0,86,179,0.95) !important;
+	}
+</style>
 </head>
 
 <body class="home wp-singular page-template page-template-elementor_header_footer page page-id-14 wp-custom-logo wp-theme-toplax tt-magic-cursor elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-14">
@@ -148,7 +191,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<div class="elementor-element elementor-element-fc5b3d9 e-con-full e-flex e-con e-child" data-id="fc5b3d9" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-1d918e8 elementor-widget elementor-widget-ekit-nav-menu" data-id="1d918e8" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="ekit-nav-menu.default">
 				<div class="elementor-widget-container">
-							<nav class="ekit-wid-con ekit_menu_responsive_tablet" 
+							<nav class="ekit-wid-con ekit_menu_responsive_tablet kambert-blue-menu" 
 			data-hamburger-icon="" 
 			data-hamburger-icon-type="icon" 
 			data-responsive-breakpoint="1024">

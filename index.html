@@ -15,6 +15,7 @@
 <link rel="alternate" type="application/rss+xml" title="Toplax &raquo; Comments Feed" href="https://demo.awaikenthemes.com/toplax/comments/feed/" />
 <link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://demo.awaikenthemes.com/toplax/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.awaikenthemes.com%2Ftoplax%2F" />
 <link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://demo.awaikenthemes.com/toplax/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fdemo.awaikenthemes.com%2Ftoplax%2F&amp;format=xml" />
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet" />
 <style id='wp-img-auto-sizes-contain-inline-css'>
 img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 /*# sourceURL=wp-img-auto-sizes-contain-inline-css */
@@ -104,10 +105,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				}
 			</style>
 						<meta name="theme-color" content="#FFFFFF">
-			<link rel="icon" href="images/favicon.png" sizes="32x32" />
-<link rel="icon" href="images/favicon.png" sizes="192x192" />
-<link rel="apple-touch-icon" href="images/favicon.png" />
-<meta name="msapplication-TileImage" content="images/favicon.png" />
+			<!-- Favicon: Use local fallback or update path if missing -->
+			<link rel="icon" href="images/favicon.png" sizes="32x32" onerror="this.onerror=null;this.href='https://www.google.com/favicon.ico';" />
+			<link rel="icon" href="images/favicon.png" sizes="192x192" onerror="this.onerror=null;this.href='https://www.google.com/favicon.ico';" />
+			<link rel="apple-touch-icon" href="images/favicon.png" onerror="this.onerror=null;this.href='https://www.google.com/favicon.ico';" />
+			<meta name="msapplication-TileImage" content="images/favicon.png" />
 <style>
 	/* Kambert custom menu styles */
 	.kambert-blue-menu .elementskit-menu-container, .kambert-blue-menu .elementskit-navbar-nav-default {
@@ -150,16 +152,86 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 	.kambert-blue-menu .elementskit-menu-overlay {
 		background: rgba(0,86,179,0.95) !important;
 	}
-</style>
-</head>
-
-<body class="home wp-singular page-template page-template-elementor_header_footer page page-id-14 wp-custom-logo wp-theme-toplax tt-magic-cursor elementor-default elementor-template-full-width elementor-kit-8 elementor-page elementor-page-14">
-
-		<div class="preloader">
-		<div class="loading-container">
-			<div class="loading"></div>
-			<div id="loading-icon"><img src="images/kambert-logo.png" alt=""></div>
-		</div>
+	:root {
+		--kambert-blue: #0056b3;
+		--kambert-orange: #ff9900;
+		--kambert-white: #ffffff;
+		--kambert-darkblue: #004080;
+		--kambert-dark: #222222;
+	}
+	.kambert-blue-menu {
+		background-color: var(--kambert-blue) !important;
+		color: var(--kambert-white) !important;
+	}
+	.kambert-blue-menu a {
+		color: var(--kambert-white) !important;
+	}
+	.kambert-blue-menu a:hover {
+		color: var(--kambert-orange) !important;
+	}
+	/* Global color scheme for visual cohesion */
+	body {
+		background: var(--kambert-white);
+		color: var(--kambert-dark);
+	}
+	h1, h2, h3, h4, h5, h6 {
+		color: var(--kambert-blue);
+	}
+	.elementor-widget-container, .elementor-heading-title, .elementor-icon-list-text, .elementor-icon-box-title, .elementor-widget-text-editor p {
+		color: var(--kambert-dark);
+	}
+	.elementskit-pricing-btn, .elementskit-btn, .ekit-menu-nav-link.active, .ekit-menu-nav-link:hover {
+		background: var(--kambert-blue) !important;
+		color: var(--kambert-white) !important;
+		border-radius: 4px;
+		transition: background 0.2s, color 0.2s;
+	}
+	.elementskit-pricing-btn:hover, .elementskit-btn:hover {
+		background: var(--kambert-orange) !important;
+		color: var(--kambert-white) !important;
+	}
+	.elementor-icon-list-icon svg, .elementor-widget-icon-list svg path[fill="#FF9900"] {
+		fill: var(--kambert-orange) !important;
+	}
+	.elementor-widget-icon-list svg path[fill="#0056b3"] {
+		fill: var(--kambert-blue) !important;
+	}
+	.elementor-widget-icon-list svg path[fill="#004080"] {
+		fill: var(--kambert-darkblue) !important;
+	}
+	.elementor-widget-icon-list svg path[fill="#222222"] {
+		fill: var(--kambert-dark) !important;
+	}
+	.elementor-widget-icon-list svg path[fill="#FFFFFF"] {
+		fill: var(--kambert-white) !important;
+	}
+	/* Section backgrounds */
+	.elementor-element[data-element_type="container"][data-settings*='background_background'] {
+		background: var(--kambert-white) !important;
+	}
+	.elementor-element[data-element_type="container"].kambert-blue-bg {
+		background: var(--kambert-blue) !important;
+		color: var(--kambert-white) !important;
+	}
+	.elementor-element[data-element_type="container"].kambert-darkblue-bg {
+		background: var(--kambert-darkblue) !important;
+		color: var(--kambert-white) !important;
+	}
+	/* Footer styling */
+	.ekit-template-content-footer {
+		background: var(--kambert-darkblue) !important;
+		color: var(--kambert-white) !important;
+	}
+	.ekit-template-content-footer a {
+		color: var(--kambert-orange) !important;
+	}
+	.ekit-template-content-footer a:hover {
+		color: var(--kambert-white) !important;
+	}
+	/* Button and link focus */
+	a:focus, button:focus {
+		outline: 2px solid var(--kambert-orange);
+	}
 	</div>
 		<div id="magic-cursor">
 		<div id="ball"></div>

@@ -143,6 +143,83 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		color: #ff9900 !important;
 		background: rgba(255,255,255,0.10);
 	}
+	.kambert-blue-menu .elementskit-menu-nav-link {
+		display: inline-flex;
+		align-items: center;
+		gap: 8px;
+	}
+	.kambert-blue-menu .elementskit-submenu-indicator {
+		display: inline-flex;
+		align-items: center;
+		justify-content: center;
+		width: 12px;
+		height: 12px;
+		margin-left: 4px;
+		font-size: 0 !important;
+		line-height: 1;
+		color: transparent !important;
+	}
+	.kambert-blue-menu .elementskit-submenu-indicator::before {
+		content: "";
+		width: 6px;
+		height: 6px;
+		border-right: 2px solid #ff9900;
+		border-bottom: 2px solid #ff9900;
+		transform: rotate(45deg) translateY(-1px);
+	}
+	.kambert-blue-menu .elementskit-navbar-nav > li > a .elementskit-submenu-indicator,
+	.kambert-blue-menu .elementskit-navbar-nav > li > a .icon-down-arrow1 {
+		vertical-align: middle;
+	}
+	.kambert-blue-menu .elementskit-dropdown .dropdown-item {
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+	.kambert-services-intro {
+		background: linear-gradient(120deg, rgba(0, 56, 118, 0.92), rgba(0, 86, 179, 0.82)), url('images/Service  page background.png') center center/cover no-repeat !important;
+	}
+	.kambert-services-intro .elementor-heading-title,
+	.kambert-services-intro p {
+		color: #ffffff !important;
+	}
+	.kambert-services-intro .section-title .elementor-heading-title {
+		color: #ffb347 !important;
+	}
+	/* Keep only three "What We Do" blocks: Injectables, Packaging, Tableating */
+	.elementor-element-e93cc59 {
+		display: none !important;
+	}
+	/* Remove only extra section immediately after OUR PROCESS */
+	.elementor-element-93ecc95 + .elementor-element-a6b2b94 {
+		display: none !important;
+	}
+	/* Remove blog section */
+	.elementor-element-fa2f94d {
+		display: none !important;
+	}
+	/* Client logo marquee right-to-left */
+	.kambert-client-marquee {
+		overflow: hidden;
+		width: 100%;
+		padding: 8px 0;
+	}
+	.kambert-client-marquee-track {
+		display: flex;
+		align-items: center;
+		gap: 44px;
+		width: max-content;
+		animation: kambertClientMarquee 20s linear infinite;
+	}
+	.kambert-client-marquee-track img {
+		height: 54px;
+		width: auto;
+		object-fit: contain;
+	}
+	@keyframes kambertClientMarquee {
+		from { transform: translateX(0); }
+		to { transform: translateX(-50%); }
+	}
 	/* Hamburger menu (mobile) */
 	.kambert-blue-menu .elementskit-menu-hamburger span {
 		background: #fff !important;
@@ -205,7 +282,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 <li id="menu-item-9169" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-9169 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/about-us/" class="ekit-menu-nav-link">About Us</a></li>
 <li id="menu-item-4865" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-has-children menu-item-4865 nav-item elementskit-dropdown-has relative_position elementskit-dropdown-menu-default_width elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/services/" class="ekit-menu-nav-link ekit-menu-dropdown-toggle">Services<i aria-hidden="true" class="icon icon-down-arrow1 elementskit-submenu-indicator"></i></a>
 <ul class="elementskit-dropdown elementskit-submenu-panel">
-	<li id="menu-item-10063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10063 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/services/custom-manufacturing-solution/" class=" dropdown-item">Custom Manufacturing Solution</a>	<li id="menu-item-10065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10065 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/services/industrial-automation-and-robotics/" class=" dropdown-item">Industrial Automation and Robotics</a>	<li id="menu-item-10066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10066 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/services/product-design-and-prototyping/" class=" dropdown-item">Product Design and Prototyping</a>	<li id="menu-item-10064" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10064 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/services/equipment-maintenance-support/" class=" dropdown-item">Equipment Maintenance Support</a>	<li id="menu-item-10067" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10067 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/services/research-and-development/" class=" dropdown-item">Research and Development</a></ul>
+	<li id="menu-item-10063" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10063 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/services/custom-manufacturing-solution/" class=" dropdown-item">Packaging</a>	<li id="menu-item-10065" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10065 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/services/industrial-automation-and-robotics/" class=" dropdown-item">Injectables</a>	<li id="menu-item-10066" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-10066 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/services/product-design-and-prototyping/" class=" dropdown-item">Tableating</a></ul>
 </li>
 <li id="menu-item-6735" class="menu-item menu-item-type-post_type menu-item-object-page menu-item-6735 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/blog/" class="ekit-menu-nav-link">Blog</a></li>
 <li id="menu-item-8575" class="menu-item menu-item-type-post_type_archive menu-item-object-awaiken-project menu-item-8575 nav-item elementskit-mobile-builder-content" data-vertical-menu=750px><a href="https://demo.awaikenthemes.com/toplax/projects/" class="ekit-menu-nav-link">Projects</a></li>
@@ -258,7 +335,46 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 			</div>
 
 			<div data-elementor-type="wp-page" data-elementor-id="14" class="elementor elementor-14">
-				<div data-ekitparallax="{&quot;ekit_section_parallax_bg&quot;:&quot;yes&quot;,&quot;ekit_section_parallax_bg_speed&quot;:0.5,&quot;elementor_lazy_load&quot;:&quot;1&quot;}" class="elementor-element elementor-element-e4dcca0 e-flex e-con-boxed e-con e-parent" data-id="e4dcca0" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<!-- Hero Slider Section -->
+				<div class="hero-slider-wrapper" style="position: relative; width: 100%; min-height: 600px; overflow: hidden; margin-bottom: 0;">
+					<div class="swiper hero-slider" style="width: 100%; height: 100%; position: absolute; top: 0; left: 0; z-index: 1;">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide" style="background-image: url('images/ChatGPT Image Feb 13, 2026, 12_39_12 PM.png'); background-size: cover; background-position: center; min-height: 600px; display: flex; align-items: center; justify-content: center;">
+								<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);"></div>
+							</div>
+							<div class="swiper-slide" style="background-image: url('images/ChatGPT Image Feb 13, 2026, 12_41_08 PM.png'); background-size: cover; background-position: center; min-height: 600px; display: flex; align-items: center; justify-content: center;">
+								<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);"></div>
+							</div>
+							<div class="swiper-slide" style="background-image: url('images/ChatGPT Image Feb 13, 2026, 03_50_07 PM.png'); background-size: cover; background-position: center; min-height: 600px; display: flex; align-items: center; justify-content: center;">
+								<div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(0,0,0,0.5);"></div>
+							</div>
+						</div>
+						<div class="swiper-pagination" style="bottom: 30px; z-index: 10;"></div>
+						<div class="swiper-button-next" style="color: white; right: 30px; z-index: 10;"></div>
+						<div class="swiper-button-prev" style="color: white; left: 30px; z-index: 10;"></div>
+					</div>
+					<script>
+					document.addEventListener('DOMContentLoaded', function() {
+						if (typeof Swiper !== 'undefined') {
+							new Swiper('.hero-slider', {
+								loop: true,
+								autoplay: {
+									delay: 5000,
+									disableOnInteraction: false,
+								},
+								pagination: {
+									el: '.hero-slider .swiper-pagination',
+									clickable: true,
+								},
+								navigation: {
+									nextEl: '.hero-slider .swiper-button-next',
+									prevEl: '.hero-slider .swiper-button-prev',
+								},
+							});
+						}
+					});
+					</script>
+				<div data-ekitparallax="{&quot;ekit_section_parallax_bg&quot;:&quot;yes&quot;,&quot;ekit_section_parallax_bg_speed&quot;:0.5,&quot;elementor_lazy_load&quot;:&quot;1&quot;}" class="elementor-element elementor-element-e4dcca0 e-flex e-con-boxed e-con e-parent" data-id="e4dcca0" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}" style="position: relative; z-index: 2; background: transparent;">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-4956713 e-con-full e-flex e-con e-child" data-id="4956713" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-aa88cdf e-con-full e-flex e-con e-child" data-id="aa88cdf" data-element_type="container" data-e-type="container">
@@ -292,26 +408,6 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-bf29bd0 e-con-full e-flex e-con e-child" data-id="bf29bd0" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-2b53063 elementor-icon-list--layout-inline elementor-align-center elementor-tablet-align-start excellence-innovating-list elementor-list-item-link-full_width elementor-invisible elementor-widget elementor-widget-icon-list" data-id="2b53063" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="icon-list.default">
-				<div class="elementor-widget-container">
-							<ul class="elementor-icon-list-items elementor-inline-items">
-							<li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M23.878 10.284C23.8379 10.0043 23.6342 9.77577 23.361 9.70391L22.1659 9.38943C21.92 8.42905 21.5402 7.51372 21.033 6.65877L21.6566 5.58955C21.7988 5.34552 21.7813 5.04008 21.612 4.81396C21.2711 4.35843 20.892 3.92122 20.4853 3.51435C20.0795 3.10841 19.6422 2.72929 19.1856 2.38738C18.9595 2.21807 18.654 2.20049 18.4099 2.34294L17.3408 2.96657C16.4859 2.45929 15.5706 2.07955 14.6102 1.8336L14.2958 0.638613C14.2238 0.365379 13.9954 0.161707 13.7157 0.121535C12.5876 -0.0405117 11.4123 -0.0405117 10.2842 0.121535C10.0045 0.16166 9.77611 0.365332 9.7042 0.638613L9.38972 1.8336C8.42939 2.0795 7.51416 2.45924 6.65911 2.96657L5.59008 2.34294C5.34605 2.20058 5.04047 2.21816 4.81434 2.38738C4.35783 2.72924 3.92053 3.10836 3.51464 3.51435C3.10795 3.92118 2.72888 4.35838 2.38791 4.81391C2.21864 5.04004 2.20111 5.34547 2.34338 5.5895L2.96691 6.65872C2.45967 7.51377 2.07994 8.42905 1.83403 9.38938L0.639 9.70386C0.365719 9.77572 0.162047 10.0043 0.121969 10.284C0.0410625 10.8483 0 11.4255 0 11.9997C0 12.5739 0.0410625 13.1511 0.122016 13.7154C0.162094 13.9951 0.365766 14.2236 0.639047 14.2955L1.83408 14.61C2.08003 15.5704 2.45977 16.4857 2.96695 17.3406L2.34342 18.4099C2.20116 18.6539 2.21869 18.9593 2.38795 19.1855C2.72892 19.641 3.108 20.0782 3.51473 20.4851C3.92053 20.891 4.35783 21.2701 4.81439 21.612C5.04052 21.7813 5.346 21.7989 5.59012 21.6565L6.65916 21.0328C7.51411 21.5401 8.42944 21.9199 9.38977 22.1658L9.70425 23.3608C9.77616 23.634 10.0046 23.8377 10.2843 23.8778C10.8483 23.9589 11.4256 24 12 24C12.5744 24 13.1517 23.9589 13.7158 23.8779C13.9955 23.8378 14.2239 23.6341 14.2958 23.3608L14.6103 22.1659C15.5706 21.92 16.4858 21.5402 17.3409 21.0329L18.4099 21.6566C18.654 21.799 18.9596 21.7814 19.1857 21.6121C19.6422 21.2703 20.0795 20.8911 20.4854 20.4852C20.892 20.0783 21.2711 19.6411 21.6121 19.1856C21.7814 18.9595 21.7989 18.654 21.6566 18.41L21.0331 17.3408C21.5403 16.4857 21.9201 15.5705 22.166 14.6101L23.361 14.2956C23.6343 14.2238 23.838 13.9952 23.878 13.7155C23.959 13.1512 24 12.574 24 11.9998C24 11.4257 23.9589 10.8483 23.878 10.284ZM12 19.4812C7.87481 19.4812 4.51875 16.1252 4.51875 12C4.51875 7.8748 7.87481 4.51874 12 4.51874C16.1252 4.51874 19.4813 7.8748 19.4813 12C19.4813 16.1252 16.1252 19.4812 12 19.4812Z" fill="#FF9900"></path><path d="M12.0008 5.92476C8.651 5.92476 5.92578 8.64998 5.92578 11.9998C5.92578 15.3495 8.651 18.0748 12.0008 18.0748C15.3506 18.0748 18.0758 15.3495 18.0758 11.9998C18.0758 8.64998 15.3506 5.92476 12.0008 5.92476ZM15.5105 10.9907L11.7448 14.7563C11.613 14.8882 11.4342 14.9623 11.2477 14.9623C11.0612 14.9623 10.8823 14.8882 10.7505 14.7563L8.86766 12.8735C8.59306 12.599 8.59306 12.1537 8.86766 11.8791C9.1422 11.6046 9.58742 11.6046 9.86202 11.8791L11.2477 13.2648L14.5161 9.99632C14.7907 9.72177 15.2359 9.72177 15.5105 9.99632C15.785 10.2709 15.785 10.7161 15.5105 10.9907Z" fill="#FF9900"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Advanced Manufacturing Solutions</span>
-									</li>
-								<li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M23.878 10.284C23.8379 10.0043 23.6342 9.77577 23.361 9.70391L22.1659 9.38943C21.92 8.42905 21.5402 7.51372 21.033 6.65877L21.6566 5.58955C21.7988 5.34552 21.7813 5.04008 21.612 4.81396C21.2711 4.35843 20.892 3.92122 20.4853 3.51435C20.0795 3.10841 19.6422 2.72929 19.1856 2.38738C18.9595 2.21807 18.654 2.20049 18.4099 2.34294L17.3408 2.96657C16.4859 2.45929 15.5706 2.07955 14.6102 1.8336L14.2958 0.638613C14.2238 0.365379 13.9954 0.161707 13.7157 0.121535C12.5876 -0.0405117 11.4123 -0.0405117 10.2842 0.121535C10.0045 0.16166 9.77611 0.365332 9.7042 0.638613L9.38972 1.8336C8.42939 2.0795 7.51416 2.45924 6.65911 2.96657L5.59008 2.34294C5.34605 2.20058 5.04047 2.21816 4.81434 2.38738C4.35783 2.72924 3.92053 3.10836 3.51464 3.51435C3.10795 3.92118 2.72888 4.35838 2.38791 4.81391C2.21864 5.04004 2.20111 5.34547 2.34338 5.5895L2.96691 6.65872C2.45967 7.51377 2.07994 8.42905 1.83403 9.38938L0.639 9.70386C0.365719 9.77572 0.162047 10.0043 0.121969 10.284C0.0410625 10.8483 0 11.4255 0 11.9997C0 12.5739 0.0410625 13.1511 0.122016 13.7154C0.162094 13.9951 0.365766 14.2236 0.639047 14.2955L1.83408 14.61C2.08003 15.5704 2.45977 16.4857 2.96695 17.3406L2.34342 18.4099C2.20116 18.6539 2.21869 18.9593 2.38795 19.1855C2.72892 19.641 3.108 20.0782 3.51473 20.4851C3.92053 20.891 4.35783 21.2701 4.81439 21.612C5.04052 21.7813 5.346 21.7989 5.59012 21.6565L6.65916 21.0328C7.51411 21.5401 8.42944 21.9199 9.38977 22.1658L9.70425 23.3608C9.77616 23.634 10.0046 23.8377 10.2843 23.8778C10.8483 23.9589 11.4256 24 12 24C12.5744 24 13.1517 23.9589 13.7158 23.8779C13.9955 23.8378 14.2239 23.6341 14.2958 23.3608L14.6103 22.1659C15.5706 21.92 16.4858 21.5402 17.3409 21.0329L18.4099 21.6566C18.654 21.799 18.9596 21.7814 19.1857 21.6121C19.6422 21.2703 20.0795 20.8911 20.4854 20.4852C20.892 20.0783 21.2711 19.6411 21.6121 19.1856C21.7814 18.9595 21.7989 18.654 21.6566 18.41L21.0331 17.3408C21.5403 16.4857 21.9201 15.5705 22.166 14.6101L23.361 14.2956C23.6343 14.2238 23.838 13.9952 23.878 13.7155C23.959 13.1512 24 12.574 24 11.9998C24 11.4257 23.9589 10.8483 23.878 10.284ZM12 19.4812C7.87481 19.4812 4.51875 16.1252 4.51875 12C4.51875 7.8748 7.87481 4.51874 12 4.51874C16.1252 4.51874 19.4813 7.8748 19.4813 12C19.4813 16.1252 16.1252 19.4812 12 19.4812Z" fill="#FF9900"></path><path d="M12.0008 5.92476C8.651 5.92476 5.92578 8.64998 5.92578 11.9998C5.92578 15.3495 8.651 18.0748 12.0008 18.0748C15.3506 18.0748 18.0758 15.3495 18.0758 11.9998C18.0758 8.64998 15.3506 5.92476 12.0008 5.92476ZM15.5105 10.9907L11.7448 14.7563C11.613 14.8882 11.4342 14.9623 11.2477 14.9623C11.0612 14.9623 10.8823 14.8882 10.7505 14.7563L8.86766 12.8735C8.59306 12.599 8.59306 12.1537 8.86766 11.8791C9.1422 11.6046 9.58742 11.6046 9.86202 11.8791L11.2477 13.2648L14.5161 9.99632C14.7907 9.72177 15.2359 9.72177 15.5105 9.99632C15.785 10.2709 15.785 10.7161 15.5105 10.9907Z" fill="#FF9900"></path></svg>						</span>
-										<span class="elementor-icon-list-text">Quality Assurance Systems</span>
-									</li>
-								<li class="elementor-icon-list-item elementor-inline-item">
-											<span class="elementor-icon-list-icon">
-							<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"><path d="M23.878 10.284C23.8379 10.0043 23.6342 9.77577 23.361 9.70391L22.1659 9.38943C21.92 8.42905 21.5402 7.51372 21.033 6.65877L21.6566 5.58955C21.7988 5.34552 21.7813 5.04008 21.612 4.81396C21.2711 4.35843 20.892 3.92122 20.4853 3.51435C20.0795 3.10841 19.6422 2.72929 19.1856 2.38738C18.9595 2.21807 18.654 2.20049 18.4099 2.34294L17.3408 2.96657C16.4859 2.45929 15.5706 2.07955 14.6102 1.8336L14.2958 0.638613C14.2238 0.365379 13.9954 0.161707 13.7157 0.121535C12.5876 -0.0405117 11.4123 -0.0405117 10.2842 0.121535C10.0045 0.16166 9.77611 0.365332 9.7042 0.638613L9.38972 1.8336C8.42939 2.0795 7.51416 2.45924 6.65911 2.96657L5.59008 2.34294C5.34605 2.20058 5.04047 2.21816 4.81434 2.38738C4.35783 2.72924 3.92053 3.10836 3.51464 3.51435C3.10795 3.92118 2.72888 4.35838 2.38791 4.81391C2.21864 5.04004 2.20111 5.34547 2.34338 5.5895L2.96691 6.65872C2.45967 7.51377 2.07994 8.42905 1.83403 9.38938L0.639 9.70386C0.365719 9.77572 0.162047 10.0043 0.121969 10.284C0.0410625 10.8483 0 11.4255 0 11.9997C0 12.5739 0.0410625 13.1511 0.122016 13.7154C0.162094 13.9951 0.365766 14.2236 0.639047 14.2955L1.83408 14.61C2.08003 15.5704 2.45977 16.4857 2.96695 17.3406L2.34342 18.4099C2.20116 18.6539 2.21869 18.9593 2.38795 19.1855C2.72892 19.641 3.108 20.0782 3.51473 20.4851C3.92053 20.891 4.35783 21.2701 4.81439 21.612C5.04052 21.7813 5.346 21.7989 5.59012 21.6565L6.65916 21.0328C7.51411 21.5401 8.42944 21.9199 9.38977 22.1658L9.70425 23.3608C9.77616 23.634 10.0046 23.8377 10.2843 23.8778C10.8483 23.9589 11.4256 24 12 24C12.5744 24 13.1517 23.9589 13.7158 23.8779C13.9955 23.8378 14.2239 23.6341 14.2958 23.3608L14.6103 22.1659C15.5706 21.92 16.4858 21.5402 17.3409 21.0329L18.4099 21.6566C18.654 21.799 18.9596 21.7814 19.1857 21.6121C19.6422 21.2703 20.0795 20.8911 20.4854 20.4852C20.892 20.0783 21.2711 19.6411 21.6121 19.1856C21.7814 18.9595 21.7989 18.654 21.6566 18.41L21.0331 17.3408C21.5403 16.4857 21.9201 15.5705 22.166 14.6101L23.361 14.2956C23.6343 14.2238 23.838 13.9952 23.878 13.7155C23.959 13.1512 24 12.574 24 11.9998C24 11.4257 23.9589 10.8483 23.878 10.284ZM12 19.4812C7.87481 19.4812 4.51875 16.1252 4.51875 12C4.51875 7.8748 7.87481 4.51874 12 4.51874C16.1252 4.51874 19.4813 7.8748 19.4813 12C19.4813 16.1252 16.1252 19.4812 12 19.4812Z" fill="#FF9900"></path><path d="M12.0008 5.92476C8.651 5.92476 5.92578 8.64998 5.92578 11.9998C5.92578 15.3495 8.651 18.0748 12.0008 18.0748C15.3506 18.0748 18.0758 15.3495 18.0758 11.9998C18.0758 8.64998 15.3506 5.92476 12.0008 5.92476ZM15.5105 10.9907L11.7448 14.7563C11.613 14.8882 11.4342 14.9623 11.2477 14.9623C11.0612 14.9623 10.8823 14.8882 10.7505 14.7563L8.86766 12.8735C8.59306 12.599 8.59306 12.1537 8.86766 11.8791C9.1422 11.6046 9.58742 11.6046 9.86202 11.8791L11.2477 13.2648L14.5161 9.99632C14.7907 9.72177 15.2359 9.72177 15.5105 9.99632C15.785 10.2709 15.785 10.7161 15.5105 10.9907Z" fill="#FF9900"></path></svg>						</span>
-										<span class="elementor-icon-list-text">State-of-the-Art Technology</span>
-									</li>
-						</ul>
-						</div>
 				</div>
 				</div>
 					</div>
@@ -346,7 +442,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 				<div class="elementor-element elementor-element-87c34a4 at-heading-animation at-animation-heading-style-2 elementor-widget elementor-widget-heading" data-id="87c34a4" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Building quality through <span>pharmaceutical excellence</span></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Building quality through <span>Pharmaceutical Excellence</span></h2>				</div>
 				</div>
 				<div class="elementor-element elementor-element-faedb24 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="faedb24" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
@@ -446,7 +542,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-6f53b84 e-flex e-con-boxed e-con e-parent" data-id="6f53b84" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-6f53b84 kambert-services-intro e-flex e-con-boxed e-con e-parent" data-id="6f53b84" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
 		<div class="elementor-element elementor-element-97f2283 e-con-full e-flex e-con e-child" data-id="97f2283" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-5ea1474 e-con-full e-flex e-con e-child" data-id="5ea1474" data-element_type="container" data-e-type="container">
@@ -456,13 +552,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 				<div class="elementor-element elementor-element-6c58e8f at-heading-animation at-animation-heading-style-2 elementor-widget elementor-widget-heading" data-id="6c58e8f" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Comprehensive solutions <span>for industrial excellence</span></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Solutions by dosage form: <span>Packaging, Injectables, Tableating</span></h2>				</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-4790aac e-con-full e-flex e-con e-child" data-id="4790aac" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-edc4078 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="edc4078" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>We provide a wide range of services tailored to meet the unique needs of modern industries. From precision manufacturing and advanced automation to custom product design and efficient logistics.</p>								</div>
+									<p>Home content focus: Hero section, Solutions by Dosage Form, Product Portfolio Snapshot, Why Kambert Machinery, R&amp;D + Manufacturing Capability, Industries &amp; Applications, Global Presence / Clients, and Inquiry CTA.</p>								</div>
 				</div>
 				</div>
 				</div>
@@ -485,7 +581,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
           </div>
                         <div class="box-body">
                             <h3 class="elementskit-info-box-title">
-                    Custom Manufacturing Solution                </h3>
+                    Packaging                </h3>
                                                     <div class="box-footer disable_hover_button">
                     <div class="btn-wraper">
                                                             <a class="elementskit-btn whitespace--normal" href="https://demo.awaikenthemes.com/toplax/services/custom-manufacturing-solution/">
@@ -511,7 +607,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
           </div>
                         <div class="box-body">
                             <h3 class="elementskit-info-box-title">
-                    Industrial Automation And Robotics                </h3>
+                    Injectables                </h3>
                                                     <div class="box-footer disable_hover_button">
                     <div class="btn-wraper">
                                                             <a class="elementskit-btn whitespace--normal" href="https://demo.awaikenthemes.com/toplax/services/industrial-automation-and-robotics/">
@@ -532,41 +628,15 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
         <div class="elementskit-infobox text-left text-left icon-top-align elementor-animation-   ">
                     <div class="elementskit-box-header elementor-animation-">
                 <div class="elementskit-info-box-icon  ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none"><path d="M56.569 47.111H55.1094L50.9624 21.2049C51.9611 20.9051 52.6952 19.992 52.6952 18.9014C52.6952 17.5656 51.6057 16.4786 50.2666 16.4786H39.3135C38.8944 16.4786 38.5546 16.8184 38.5546 17.2375C38.5546 17.6567 38.8944 17.9965 39.3135 17.9965H50.2666C50.7687 17.9965 51.1774 18.4026 51.1774 18.9013C51.1774 19.397 50.7688 19.8001 50.2666 19.8001H50.0905H39.848C39.4288 19.8001 39.0891 20.1398 39.0891 20.559C39.0891 20.9782 39.4288 21.3179 39.848 21.3179H49.4433L53.5722 47.1095C52.5393 47.1096 57.6279 47.1091 41.7692 47.1106L36.5908 14.6076C37.8281 14.3094 38.7531 13.2002 38.7531 11.8726C38.7531 10.3174 37.4879 9.052 35.9329 9.052H10.7256C9.17068 9.052 7.90541 10.3173 7.90541 11.8726C7.90541 13.2002 8.83061 14.3094 10.0678 14.6076L4.88947 47.111H3.43061C1.92756 47.111 0.70459 48.3336 0.70459 49.8367C0.70459 51.3397 1.92744 52.5629 3.43061 52.5629H56.569C58.0721 52.5629 59.2951 51.3397 59.2951 49.8367C59.2949 48.3336 58.0721 47.111 56.569 47.111ZM9.42334 11.8729C9.42334 11.1549 10.0076 10.5703 10.7256 10.5703H35.9329C36.6509 10.5703 37.2352 11.1549 37.2352 11.8729C37.2352 12.5909 36.6509 13.1756 35.9329 13.1756C27.2826 13.1756 19.4796 13.1756 10.7256 13.1756C10.0076 13.1756 9.42334 12.5909 9.42334 11.8729ZM11.5911 14.6934H35.0676L40.2323 47.1109H6.42639L11.5911 14.6934ZM56.569 51.045H3.43061C2.76451 51.045 2.22252 50.5031 2.22252 49.8367C2.22252 49.1708 2.76439 48.6289 3.43061 48.6289H56.569C57.2351 48.6289 57.7771 49.1709 57.7771 49.8367C57.7771 50.5031 57.2351 51.045 56.569 51.045Z" fill="#FF9900"></path><path d="M22.7194 22.4354C22.139 23.2198 17.0493 30.192 17.0493 33.4002C17.0493 36.8611 19.8649 39.6769 23.3254 39.6769C26.7908 39.6769 29.6098 36.8611 29.6098 33.4002C29.6098 30.1919 24.5201 23.2197 23.9397 22.4354C23.6533 22.0476 23.0058 22.0476 22.7194 22.4354ZM23.3254 38.1591C20.7017 38.1591 18.5672 36.0245 18.5672 33.4004C18.5672 31.3725 21.5935 26.6516 23.3296 24.1851C25.0658 26.6511 28.092 31.3707 28.092 33.4004C28.0919 36.0245 25.9536 38.1591 23.3254 38.1591Z" fill="#222222"></path></svg>
+                    <img decoding="async" width="60" height="61" src="images/ChatGPT Image Feb 13, 2026, 03_50_07 PM.png" class="attachment-full size-full" alt="Tableating icon" style="width: 60px; height: 61px; object-fit: cover;" />
                 </div>
           </div>
                         <div class="box-body">
                             <h3 class="elementskit-info-box-title">
-                    Product Design And Prototyping                </h3>
+                    Tableating                </h3>
                                                     <div class="box-footer disable_hover_button">
                     <div class="btn-wraper">
                                                             <a class="elementskit-btn whitespace--normal" href="https://demo.awaikenthemes.com/toplax/services/product-design-and-prototyping/">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M7 18.3301C6.7 18.3301 6.5 18.2301 6.3 18.0301C5.9 17.6301 5.9 17.0301 6.3 16.6301L16.3 6.63008C16.7 6.23008 17.3 6.23008 17.7 6.63008C18.1 7.03008 18.1 7.63008 17.7 8.03008L7.7 18.0301C7.5 18.2301 7.3 18.3301 7 18.3301Z" fill="#222222"></path><path d="M17 17.3301C16.4 17.3301 16 16.9301 16 16.3301V8.33008H8C7.4 8.33008 7 7.93008 7 7.33008C7 6.73008 7.4 6.33008 8 6.33008H17C17.6 6.33008 18 6.73008 18 7.33008V16.3301C18 16.9301 17.6 17.3301 17 17.3301Z" fill="#222222"></path></svg>                                                                            </a>
-                                                        </div>
-                </div>
-                    </div>
-        
-        
-                </div>
-        </div>				</div>
-				</div>
-				<div class="elementor-element elementor-element-8115ebf service-item elementor-widget__width-initial elementor-widget-mobile__width-inherit ekit-equal-height-disable elementor-widget elementor-widget-elementskit-icon-box" data-id="8115ebf" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-icon-box.default">
-				<div class="elementor-widget-container">
-					<div class="ekit-wid-con" >        <!-- link opening -->
-                <!-- end link opening -->
-
-        <div class="elementskit-infobox text-left text-left icon-top-align elementor-animation-   ">
-                    <div class="elementskit-box-header elementor-animation-">
-                <div class="elementskit-info-box-icon  ">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="60" height="61" viewBox="0 0 60 61" fill="none"><path d="M39.9539 55.3595C40.4381 55.3595 40.8307 54.9669 40.8307 54.4827V46.9815C40.8307 46.4973 40.4381 46.1047 39.9539 46.1047H30.0423C29.5581 46.1047 29.1655 46.4973 29.1655 46.9815V54.4827C29.1655 54.9669 29.5581 55.3595 30.0423 55.3595C30.5265 55.3595 30.9191 54.9669 30.9191 54.4827V47.8584H39.077V54.4827C39.0771 54.9669 39.4697 55.3595 39.9539 55.3595Z" fill="#222222"></path><path d="M4.74691 58.8669H55.2534C55.7377 58.8669 56.1302 58.4743 56.1302 57.9901C56.1302 57.5059 55.7377 57.1133 55.2534 57.1133H51.9036V31.5882C51.9036 31.2529 51.7127 30.9473 51.4112 30.8005C51.1111 30.6537 50.7519 30.6904 50.4873 30.8968L43.8895 36.044V31.5882C43.8895 31.2529 43.6986 30.9473 43.3971 30.8005C43.0975 30.6537 42.7373 30.6904 42.4732 30.8968L35.875 36.044V31.5882C35.875 31.2529 35.6841 30.9473 35.3825 30.8005C35.0824 30.6537 34.7232 30.6904 34.4586 30.8968L27.8604 36.044V31.5882C27.8604 31.2529 27.6695 30.9473 27.368 30.8005C27.0679 30.6537 26.7087 30.6904 26.4441 30.8968L21.9374 34.4131C21.5555 34.7112 21.4879 35.2622 21.7854 35.6441C22.0842 36.0255 22.6349 36.0941 23.0163 35.7961L26.1067 33.3847V37.8401C26.1067 38.1753 26.2976 38.481 26.5991 38.6278C26.9 38.7759 27.2593 38.7383 27.523 38.5315L34.1213 33.3842V37.8399C34.1213 38.1752 34.3121 38.4808 34.6137 38.6277C34.9151 38.7758 35.2739 38.7382 35.5376 38.5313L42.1358 33.3841V37.8398C42.1358 38.1751 42.3267 38.4807 42.6282 38.6276C42.9296 38.7757 43.288 38.7381 43.5522 38.5312L50.1499 33.384V57.1128C45.9928 57.1128 27.9962 57.1128 19.8465 57.1128V24.0683C21.7867 23.8936 23.3175 22.2769 23.3175 20.2921C23.3175 18.1911 21.6083 16.4819 19.5074 16.4819H8.44348C6.34254 16.4819 4.63336 18.1911 4.63336 20.2921C4.63336 22.274 6.16008 23.8889 8.09625 24.0675V57.1128H4.74691C4.2627 57.1128 3.87012 57.5054 3.87012 57.9896C3.87012 58.4738 4.2627 58.8669 4.74691 58.8669ZM6.38707 20.2924C6.38707 19.1586 7.30969 18.236 8.44348 18.236H19.5073C20.6411 18.236 21.5637 19.1586 21.5637 20.2924C21.5637 21.4265 20.6411 22.3493 19.5073 22.3493C19.8445 22.3488 14.6941 22.3475 8.44348 22.3493C7.30981 22.3493 6.38707 21.4267 6.38707 20.2924ZM9.84996 24.103H18.0927V57.1132H9.84996V24.103Z" fill="#FF9900"></path><path d="M13.9749 14.3283C14.4592 14.3283 14.8517 13.9357 14.8517 13.4515C14.8517 11.3994 16.5211 9.73011 18.5731 9.73011H32.4486C35.4675 9.73011 37.9234 7.27421 37.9234 4.25534V3.62558C37.9234 3.14136 37.5308 2.74878 37.0466 2.74878C36.5624 2.74878 36.1698 3.14136 36.1698 3.62558V4.25534C36.1698 6.30706 34.5004 7.9764 32.4487 7.9764H18.5733C15.5544 7.9764 13.0981 10.4326 13.0981 13.4515C13.098 13.9356 13.4907 14.3283 13.9749 14.3283Z" fill="#222222"></path><path d="M14.8712 28.4485H13.0794C12.5952 28.4485 12.2026 28.8411 12.2026 29.3253C12.2026 29.8095 12.5952 30.2021 13.0794 30.2021H14.8712C15.3554 30.2021 15.748 29.8095 15.748 29.3253C15.748 28.8411 15.3554 28.4485 14.8712 28.4485Z" fill="#222222"></path><path d="M14.8712 35.9702H13.0794C12.5952 35.9702 12.2026 36.3628 12.2026 36.847C12.2026 37.3312 12.5952 37.7238 13.0794 37.7238H14.8712C15.3554 37.7238 15.748 37.3312 15.748 36.847C15.748 36.3628 15.3554 35.9702 14.8712 35.9702Z" fill="#222222"></path><path d="M14.8712 43.4919H13.0794C12.5952 43.4919 12.2026 43.8845 12.2026 44.3687C12.2026 44.853 12.5952 45.2455 13.0794 45.2455H14.8712C15.3554 45.2455 15.748 44.853 15.748 44.3687C15.748 43.8845 15.3554 43.4919 14.8712 43.4919Z" fill="#222222"></path><path d="M14.8712 51.0137H13.0794C12.5952 51.0137 12.2026 51.4063 12.2026 51.8905C12.2026 52.3747 12.5952 52.7673 13.0794 52.7673H14.8712C15.3554 52.7673 15.748 52.3747 15.748 51.8905C15.748 51.4063 15.3554 51.0137 14.8712 51.0137Z" fill="#222222"></path></svg>
-                </div>
-          </div>
-                        <div class="box-body">
-                            <h3 class="elementskit-info-box-title">
-                    Equipment  Maintenance Support                </h3>
-                                                    <div class="box-footer disable_hover_button">
-                    <div class="btn-wraper">
-                                                            <a class="elementskit-btn whitespace--normal" href="https://demo.awaikenthemes.com/toplax/services/equipment-maintenance-support/">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="25" viewBox="0 0 24 25" fill="none"><path d="M7 18.3301C6.7 18.3301 6.5 18.2301 6.3 18.0301C5.9 17.6301 5.9 17.0301 6.3 16.6301L16.3 6.63008C16.7 6.23008 17.3 6.23008 17.7 6.63008C18.1 7.03008 18.1 7.63008 17.7 8.03008L7.7 18.0301C7.5 18.2301 7.3 18.3301 7 18.3301Z" fill="#222222"></path><path d="M17 17.3301C16.4 17.3301 16 16.9301 16 16.3301V8.33008H8C7.4 8.33008 7 7.93008 7 7.33008C7 6.73008 7.4 6.33008 8 6.33008H17C17.6 6.33008 18 6.73008 18 7.33008V16.3301C18 16.9301 17.6 17.3301 17 17.3301Z" fill="#222222"></path></svg>                                                                            </a>
                                                         </div>
                 </div>
@@ -596,7 +666,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<div class="elementor-element elementor-element-9a0cf1b e-con-full e-flex e-con e-child" data-id="9a0cf1b" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-2ae871d image-anime our-story-header-img elementor-widget__width-initial at-image-animation at-animation-image-style-1 elementor-widget elementor-widget-image" data-id="2ae871d" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-															<img decoding="async" width="303" height="215" src="images/ChatGPT Image Feb 13, 2026, 03_50_07 PM.png" class="attachment-full size-full wp-image-1288" alt="" />															</div>
+															<img decoding="async" width="303" height="215" src="images/ChatGPT Image Feb 13, 2026, 03_50_07 PM.png" class="attachment-full size-full wp-image-1288" alt="Kambert manufacturing process" />															</div>
 				</div>
 				<div class="elementor-element elementor-element-7f0555c image-anime our-story-header-img elementor-widget__width-initial at-image-animation at-animation-image-style-1 elementor-widget elementor-widget-image" data-id="7f0555c" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
@@ -687,7 +757,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 				<div class="elementor-element elementor-element-b1dd797 at-heading-animation at-animation-heading-style-2 elementor-widget elementor-widget-heading" data-id="b1dd797" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Innovative factory and industry<span> solutions today</span></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Product portfolio built for <span>pharma manufacturing excellence</span></h2>				</div>
 				</div>
 		<div class="elementor-element elementor-element-9c46771 e-con-full e-flex e-con e-child" data-id="9c46771" data-element_type="container" data-e-type="container">
 		<div class="elementor-element elementor-element-f475c1b e-con-full what-we-do-item e-flex e-con e-child" data-id="f475c1b" data-element_type="container" data-e-type="container">
@@ -704,11 +774,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 									<h3 class="elementor-icon-box-title">
 						<span  >
-							Automation Solutions						</span>
+							Injectables						</span>
 					</h3>
 				
 									<p class="elementor-icon-box-description">
-						Streamlining processes through cutting-edge technology.					</p>
+						Ampoule Filling &amp; Sealing Machine and Rotary Type Ampoule Washing Machine for reliable sterile production.					</p>
 				
 			</div>
 			
@@ -730,11 +800,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 									<h3 class="elementor-icon-box-title">
 						<span  >
-							Quality Control						</span>
+							Packaging						</span>
 					</h3>
 				
 									<p class="elementor-icon-box-description">
-						Ensuring product excellence through rigorous testing.					</p>
+						Blister Pack Machine KBS 300-AP, KBS 230, KBS 1050, and R&amp;D Blister Packing Machine KBS MINI.					</p>
 				
 			</div>
 			
@@ -756,11 +826,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 									<h3 class="elementor-icon-box-title">
 						<span  >
-							Process Engineering						</span>
+							Packaging						</span>
 					</h3>
 				
 									<p class="elementor-icon-box-description">
-						Ensuring product excellence through rigorous testing.					</p>
+						Blister Pack Machine KBS 300-AP, KBS 230, KBS 1050, and R&amp;D Blister Packing Machine KBS MINI.					</p>
 				
 			</div>
 			
@@ -782,11 +852,11 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 
 									<h3 class="elementor-icon-box-title">
 						<span  >
-							Product Development						</span>
+							Tableating						</span>
 					</h3>
 				
 									<p class="elementor-icon-box-description">
-						Streamlining processes through cutting-edge technology.					</p>
+						Innovative Tablet Press, Bi-layer Tablet Press (Expert 1/2), Mini Tablet Press, and complete support units.					</p>
 				
 			</div>
 			
@@ -798,7 +868,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<div class="elementor-element elementor-element-f59ba85 e-con-full e-flex e-con e-child" data-id="f59ba85" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-c13dd84 what-we-do-footer elementor-widget elementor-widget-text-editor" data-id="c13dd84" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Let&#8217;s make something great work together. <a href="https://demo.awaikenthemes.com/toplax/contact-us/"><strong>Get Free Quote</strong></a></p>								</div>
+									<p>Need complete pharma machinery setup? <a href="https://demo.awaikenthemes.com/toplax/contact-us/"><strong>Send Inquiry CTA</strong></a></p>								</div>
 				</div>
 				</div>
 				</div>
@@ -825,13 +895,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 				<div class="elementor-element elementor-element-0673ef8 at-heading-animation at-animation-heading-style-2 elementor-widget elementor-widget-heading" data-id="0673ef8" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Our successful project <span>initiatives</span></h2>				</div>
+					<h2 class="elementor-heading-title elementor-size-default">Our successful project <span>initiatives and product deliveries</span></h2>				</div>
 				</div>
 				</div>
 		<div class="elementor-element elementor-element-01592e0 e-con-full e-flex e-con e-child" data-id="01592e0" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-e88907d elementor-invisible elementor-widget elementor-widget-text-editor" data-id="e88907d" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
 				<div class="elementor-widget-container">
-									<p>Our successful project initiatives showcase our commitment to excellence and innovation across various industries.</p>								</div>
+									<p>Product portfolio snapshot across Injectables, Packaging, and Tableating with deployment-ready machines for pharma plants.</p>								</div>
 				</div>
 				</div>
 				</div>
@@ -841,12 +911,9 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				<div class="elementor-widget-container">
 							<div id="awaiken-portfolio-42dfb0c" class="awaiken-portfolio-widget" data-config='{&quot;rtl&quot;:false,&quot;id&quot;:&quot;42dfb0c&quot;,&quot;item_spacing&quot;:&quot;30&quot;,&quot;show_filter_bar&quot;:&quot;yes&quot;}'>
 				<ul class="awaiken-portfolio-grid__filters portfolio_filter-design-2">
-							<li class="awaiken-portfolio-grid__filter active" data-filter="*">All</li>
-										<li class="awaiken-portfolio-grid__filter-label" data-filter=".portfolio-filter-10">Automation</li>
-							<li class="awaiken-portfolio-grid__filter-label" data-filter=".portfolio-filter-12">Development</li>
-							<li class="awaiken-portfolio-grid__filter-label" data-filter=".portfolio-filter-13">Infrastructure</li>
-							<li class="awaiken-portfolio-grid__filter-label" data-filter=".portfolio-filter-9">Manufacturing</li>
-							<li class="awaiken-portfolio-grid__filter-label" data-filter=".portfolio-filter-11">Sustainability</li>
+							<li class="awaiken-portfolio-grid__filter-label" data-filter=".portfolio-filter-10">Injectables</li>
+							<li class="awaiken-portfolio-grid__filter-label" data-filter=".portfolio-filter-12">Packaging</li>
+							<li class="awaiken-portfolio-grid__filter-label" data-filter=".portfolio-filter-13">Tableating</li>
 					</ul>
 				<div class="awaiken-portfolio-grid elementor-grid awaiken-portfolio-layout-grid awaiken-portfolio-item-design-1">
 				<article class="awaiken-portfolio-grid-item portfolio-filter-12 portfolio-filter-9 post-8573 awaiken-project type-awaiken-project status-publish has-post-thumbnail hentry awaiken-project-category-development awaiken-project-category-manufacturing">
@@ -856,13 +923,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				<img loading="lazy" decoding="async" width="1200" height="800" src="images/pharma-manufacturing.jpg.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />			</div>
 		</a>
 				<div class="awaiken-portfolio-grid-item__categories">
-			<a href="https://demo.awaikenthemes.com/toplax/project-category/development/"><span class="awaiken-portfolio-grid-item__categories__category">Development</span></a> <a href="https://demo.awaikenthemes.com/toplax/project-category/manufacturing/"><span class="awaiken-portfolio-grid-item__categories__category">Manufacturing</span></a>		</div>
+			<a href="https://demo.awaikenthemes.com/toplax/project-category/development/"><span class="awaiken-portfolio-grid-item__categories__category">Injectables</span></a> <a href="https://demo.awaikenthemes.com/toplax/project-category/manufacturing/"><span class="awaiken-portfolio-grid-item__categories__category">Packaging</span></a>		</div>
 				<div class="awaiken-portfolio-grid-item__content">
 				<a class="awaiken-portfolio-grid-item__link" href="https://demo.awaikenthemes.com/toplax/projects/total-quality-management-implementation/">
-			<h4 class="awaiken-portfolio-grid-item__title">Total Quality Management Implementation</h4>
+			<h4 class="awaiken-portfolio-grid-item__title">Ampoule Filling &amp; Sealing Machine</h4>
 		</a>
 				<div class="awaiken-portfolio-grid-item__excerpt">
-			<p>Total Quality Management Implementation Home Project Details Client: Ronald Richardson Tags: Manufacturing [&hellip;]</p>
+			<p>Injectables line delivery with Rotary Type Ampoule Washing Machine integration for high-speed sterile production.</p>
 		</div>
 				</div>
 				</div>
@@ -874,13 +941,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				<img loading="lazy" decoding="async" width="1200" height="800" src="images/Tableting.jpg.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />			</div>
 		</a>
 				<div class="awaiken-portfolio-grid-item__categories">
-			<a href="https://demo.awaikenthemes.com/toplax/project-category/automation/"><span class="awaiken-portfolio-grid-item__categories__category">Automation</span></a> <a href="https://demo.awaikenthemes.com/toplax/project-category/manufacturing/"><span class="awaiken-portfolio-grid-item__categories__category">Manufacturing</span></a> <a href="https://demo.awaikenthemes.com/toplax/project-category/sustainability/"><span class="awaiken-portfolio-grid-item__categories__category">Sustainability</span></a>		</div>
+			<a href="https://demo.awaikenthemes.com/toplax/project-category/automation/"><span class="awaiken-portfolio-grid-item__categories__category">Packaging</span></a> <a href="https://demo.awaikenthemes.com/toplax/project-category/manufacturing/"><span class="awaiken-portfolio-grid-item__categories__category">Packaging</span></a> <a href="https://demo.awaikenthemes.com/toplax/project-category/sustainability/"><span class="awaiken-portfolio-grid-item__categories__category">R&amp;D</span></a>		</div>
 				<div class="awaiken-portfolio-grid-item__content">
 				<a class="awaiken-portfolio-grid-item__link" href="https://demo.awaikenthemes.com/toplax/projects/advanced-research-in-material-science/">
-			<h4 class="awaiken-portfolio-grid-item__title">Advanced Research in Material Science</h4>
+			<h4 class="awaiken-portfolio-grid-item__title">Blister Pack Machine Series</h4>
 		</a>
 				<div class="awaiken-portfolio-grid-item__excerpt">
-			<p>Advanced Research in Material Science Home Project Details Client: Ronald Richardson Tags: [&hellip;]</p>
+			<p>KBS 300-AP, KBS 230, KBS 1050, and R&amp;D Blister Packing Machine KBS MINI for complete packaging operations.</p>
 		</div>
 				</div>
 				</div>
@@ -892,13 +959,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				<img loading="lazy" decoding="async" width="1200" height="800" src="images/Injection.jpg.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />			</div>
 		</a>
 				<div class="awaiken-portfolio-grid-item__categories">
-			<a href="https://demo.awaikenthemes.com/toplax/project-category/infrastructure/"><span class="awaiken-portfolio-grid-item__categories__category">Infrastructure</span></a> <a href="https://demo.awaikenthemes.com/toplax/project-category/sustainability/"><span class="awaiken-portfolio-grid-item__categories__category">Sustainability</span></a>		</div>
+			<a href="https://demo.awaikenthemes.com/toplax/project-category/infrastructure/"><span class="awaiken-portfolio-grid-item__categories__category">Tableating</span></a> <a href="https://demo.awaikenthemes.com/toplax/project-category/sustainability/"><span class="awaiken-portfolio-grid-item__categories__category">Tableating</span></a>		</div>
 				<div class="awaiken-portfolio-grid-item__content">
 				<a class="awaiken-portfolio-grid-item__link" href="https://demo.awaikenthemes.com/toplax/projects/workplace-safety-enhancement-initiative/">
-			<h4 class="awaiken-portfolio-grid-item__title">Workplace Safety Enhancement Initiative</h4>
+			<h4 class="awaiken-portfolio-grid-item__title">Innovative Tablet Press Line</h4>
 		</a>
 				<div class="awaiken-portfolio-grid-item__excerpt">
-			<p>Workplace Safety Enhancement Initiative Home Project Details Client: Ronald Richardson Tags: Infrastructure [&hellip;]</p>
+			<p>Innovative Tablet Press, Bi-layer Tablet Press (Expert 1), Bi-layer Tablet Press (Expert 2), and Mini Tablet Press.</p>
 		</div>
 				</div>
 				</div>
@@ -910,13 +977,13 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				<img loading="lazy" decoding="async" width="1200" height="800" src="images/pharma-manufacturing.jpg.jpeg" class="attachment-post-thumbnail size-post-thumbnail wp-post-image" alt="" />			</div>
 		</a>
 				<div class="awaiken-portfolio-grid-item__categories">
-			<a href="https://demo.awaikenthemes.com/toplax/project-category/infrastructure/"><span class="awaiken-portfolio-grid-item__categories__category">Infrastructure</span></a> <a href="https://demo.awaikenthemes.com/toplax/project-category/manufacturing/"><span class="awaiken-portfolio-grid-item__categories__category">Manufacturing</span></a>		</div>
+			<a href="https://demo.awaikenthemes.com/toplax/project-category/infrastructure/"><span class="awaiken-portfolio-grid-item__categories__category">Tableating</span></a> <a href="https://demo.awaikenthemes.com/toplax/project-category/manufacturing/"><span class="awaiken-portfolio-grid-item__categories__category">Utilities</span></a>		</div>
 				<div class="awaiken-portfolio-grid-item__content">
 				<a class="awaiken-portfolio-grid-item__link" href="https://demo.awaikenthemes.com/toplax/projects/robotic-process-automation-deployment/">
-			<h4 class="awaiken-portfolio-grid-item__title">Robotic Process Automation Deployment</h4>
+			<h4 class="awaiken-portfolio-grid-item__title">Advanced Tableating Systems</h4>
 		</a>
 				<div class="awaiken-portfolio-grid-item__excerpt">
-			<p>Robotic Process Automation Deployment Home Project Details Client: Ronald Richardson Tags: Infrastructure [&hellip;]</p>
+			<p>Dust Extractor, Combo Unit, Oscillating Granulator, Powder Recovery System, and Capsule Filling Machine integration.</p>
 		</div>
 				</div>
 				</div>
@@ -1039,40 +1106,25 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 				</div>
 					</div>
 				</div>
-		<div class="elementor-element elementor-element-580b29a e-flex e-con-boxed e-con e-parent" data-id="580b29a" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-a6b2b94 e-flex e-con-boxed e-con e-parent" data-id="a6b2b94" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
 					<div class="e-con-inner">
-		<div class="elementor-element elementor-element-be45c12 e-con-full e-flex e-con e-child" data-id="be45c12" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-c3ec86b e-con-full e-flex e-con e-child" data-id="c3ec86b" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-a13493b section-title at-heading-animation at-animation-heading-none elementor-invisible elementor-widget elementor-widget-heading" data-id="a13493b" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+		<div class="elementor-element elementor-element-be1b0eb e-con-full e-flex e-con e-child" data-id="be1b0eb" data-element_type="container" data-e-type="container">
+		<div class="elementor-element elementor-element-1c3bbe0 e-con-full e-flex e-con e-child" data-id="1c3bbe0" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-5a547bf our-testimonial-image image-anime at-image-animation at-animation-image-style-1 elementor-widget elementor-widget-image" data-id="5a547bf" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image.default">
 				<div class="elementor-widget-container">
-					<h3 class="elementor-heading-title elementor-size-default">pricing plan</h3>				</div>
+															<img loading="lazy" decoding="async" width="567" height="600" src="images/ChatGPT Image Feb 13, 2026, 12_39_12 PM.png" class="attachment-full size-full wp-image-3047" alt="" />															</div>
 				</div>
-				<div class="elementor-element elementor-element-2680768 elementor-widget__width-initial elementor-widget-tablet__width-inherit at-heading-animation at-animation-heading-style-2 elementor-widget elementor-widget-heading" data-id="2680768" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="heading.default">
+				</div>
+		<div class="elementor-element elementor-element-6b7b405 e-con-full e-flex e-con e-child" data-id="6b7b405" data-element_type="container" data-e-type="container">
+				<div class="elementor-element elementor-element-3de33e1 section-title at-heading-animation at-animation-heading-none elementor-invisible elementor-widget elementor-widget-heading" data-id="3de33e1" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-					<h2 class="elementor-heading-title elementor-size-default">Transparent pricing for <span>every solution</span></h2>				</div>
+					<h3 class="elementor-heading-title elementor-size-default">OUR CLIENT SAY</h3>				</div>
 				</div>
-				</div>
-		<div class="elementor-element elementor-element-d4f1a8a e-con-full e-flex e-con e-child" data-id="d4f1a8a" data-element_type="container" data-e-type="container">
-				<div class="elementor-element elementor-element-d712c64 elementor-invisible elementor-widget elementor-widget-text-editor" data-id="d712c64" data-element_type="widget" data-e-type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:100,&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="text-editor.default">
+				<div class="elementor-element elementor-element-f55dc94 at-heading-animation at-animation-heading-style-2 elementor-widget elementor-widget-heading" data-id="f55dc94" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="heading.default">
 				<div class="elementor-widget-container">
-									<p>We believe in providing clear and upfront pricing to ensure that you understand the value of our services.</p>								</div>
+					<h2 class="elementor-heading-title elementor-size-default">What our satisfied clients <span>are saying</span></h2>				</div>
 				</div>
-				</div>
-				</div>
-		<div class="elementor-element elementor-element-af724b2 e-con-full e-flex e-con e-child" data-id="af724b2" data-element_type="container" data-e-type="container">
-		<div class="elementor-element elementor-element-5cdaecf e-con-full e-flex elementor-invisible e-con e-child" data-id="5cdaecf" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeInUp&quot;}">
-				<div class="elementor-element elementor-element-e38e282 pricing-box elementor-widget elementor-widget-elementskit-pricing" data-id="e38e282" data-element_type="widget" data-e-type="widget" data-settings="{&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="elementskit-pricing.default">
-				<div class="elementor-widget-container">
-					<div class="ekit-wid-con" >
-
-        <div class="elementskit-single-pricing " >
-            <div class="elementskit-pricing-header ">
-													
-														
-				
-				                	<h3					class=" elementskit-pricing-title">Advanced Plan					</h3>
-								            </div>
-			            <div class=" elementskit-pricing-price-wraper has-tag ">
+		<div class="elementor-element elementor-element-a6b2b94 e-flex e-con-boxed e-con e-parent" data-id="a6b2b94" data-element_type="container" data-e-type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
                 <div class="elementskit-pricing-tag"></div>
                 <span class="elementskit-pricing-price">
 											<sup class="currency">$</sup>
@@ -1281,7 +1333,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 							<div class="elementskit-commentor-bio">
 								<div class="elementkit-commentor-details client_left">
 																			<div class="elementskit-commentor-image ekit-testimonial--avatar">
-											<img loading="lazy" decoding="async" width="60" height="60" src="images/kambert-logo.png" class="attachment-full size-full" alt="" />										</div>
+											<img loading="lazy" decoding="async" width="60" height="60" src="images/Slider 1.png" class="attachment-full size-full" alt="Brooklyn Simmons" style="object-fit: cover;" />										</div>
 																		<div class="elementskit-profile-info">
 										<strong class="elementskit-author-name">Brooklyn Simmons</strong>
 										<span class="elementskit-author-des">Homeowner</span>
@@ -1310,7 +1362,7 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 							<div class="elementskit-commentor-bio">
 								<div class="elementkit-commentor-details client_left">
 																			<div class="elementskit-commentor-image ekit-testimonial--avatar">
-											<img loading="lazy" decoding="async" width="60" height="60" src="images/kambert-logo.png" class="attachment-full size-full" alt="" />										</div>
+											<img loading="lazy" decoding="async" width="60" height="60" src="images/Slider 2.png" class="attachment-full size-full" alt="Albert Flores" style="object-fit: cover;" />										</div>
 																		<div class="elementskit-profile-info">
 										<strong class="elementskit-author-name">Albert Flores</strong>
 										<span class="elementskit-author-des">senior engineer</span>
@@ -1335,11 +1387,18 @@ img:is([sizes=auto i],[sizes^="auto," i]){contain-intrinsic-size:3000px 1500px}
 		<div class="elementor-element elementor-element-ccdf818 e-con-full e-flex e-con e-child" data-id="ccdf818" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-bd92851 faqs-client-slider elementor-widget elementor-widget-image-carousel" data-id="bd92851" data-element_type="widget" data-e-type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;5&quot;,&quot;slides_to_show_tablet&quot;:&quot;4&quot;,&quot;slides_to_show_mobile&quot;:&quot;2&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:40,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:40,&quot;sizes&quot;:[]},&quot;autoplay&quot;:&quot;yes&quot;,&quot;pause_on_hover&quot;:&quot;yes&quot;,&quot;pause_on_interaction&quot;:&quot;yes&quot;,&quot;autoplay_speed&quot;:5000,&quot;infinite&quot;:&quot;yes&quot;,&quot;speed&quot;:500,&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;ekit_we_effect_on&quot;:&quot;none&quot;}" data-widget_type="image-carousel.default">
 				<div class="elementor-widget-container">
-							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Image Carousel" dir="ltr">
-			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
-								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/kambert-logo.png" alt="company-logo-1" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/kambert-logo.png" alt="company-logo-2" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/kambert-logo.png" alt="company-logo-3" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/kambert-logo.png" alt="company-logo-4" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 of 5"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="images/kambert-logo.png" alt="company-logo-5" /></figure></div>			</div>
-							
-									</div>
+							<div class="kambert-client-marquee" role="region" aria-label="Client logos marquee">
+								<div class="kambert-client-marquee-track">
+									<img decoding="async" src="images/kambert-logo.png" alt="company-logo-1" />
+									<img decoding="async" src="images/kambert-logo-1.png" alt="company-logo-2" />
+									<img decoding="async" src="images/favicon.png" alt="company-logo-3" />
+									<img decoding="async" src="images/kambert-logo.png" alt="company-logo-4" />
+									<img decoding="async" src="images/kambert-logo-1.png" alt="company-logo-5" />
+									<img decoding="async" src="images/favicon.png" alt="company-logo-6" />
+									<img decoding="async" src="images/kambert-logo.png" alt="company-logo-7" />
+									<img decoding="async" src="images/kambert-logo-1.png" alt="company-logo-8" />
+								</div>
+							</div>
 						</div>
 				</div>
 				</div>
@@ -1726,3 +1785,4 @@ const a=JSON.parse(document.getElementById("wp-emoji-settings").textContent),o=(
 
 <!-- Mirrored from demo.awaikenthemes.com/toplax/ by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 13 Feb 2026 18:18:46 GMT -->
 </html>
+
